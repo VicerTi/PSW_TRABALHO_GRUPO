@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="accompanharpedido.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+<title>Login | Nome Empresa</title>
+</head>
+<body>
+    <header>
+        <div class="grid-logo">
+            <img class ="grid-logo-img" src="logo_placeholder.png" alt="" srcset="" width="100" height="100">
+            <span class="NomeRes">Nome do restaurante</span>
+        </div>
+    </header>
+
+    <main>
+        <div class = "tela-accompanhar">
+             <h1>Lista de Pedidos</h1>
+             <blockquote cite="">
+                 EM ANDAMENTO<br><br>
+                 #123456789
+                 <div class = "detalhes-box">
+                     <button onclick="DetalhesLista()">Detalhes</button>
+                 </div>
+             </blockquote>
+         </div>
+             <div class = "detalhe-extra">
+                 <p id="PedidoRealizado"></p>
+             </div>
+             <div class = "detalhe-extra-default">
+                 <p id="TextoDefault"></p>
+             </div>
+             <div class = "detalhe-extra">
+                 <p id="PagamentoConfirmado"></p>
+             </div>
+             <div class = "detalhe-extra-default">
+                 <p id="TextoDefault2"></p>
+             </div>
+             <div class = "detalhe-extra">
+                 <p id="Preparo"></p>
+             </div>
+             <div class = "detalhe-extra-default">
+                 <p id="TextoDefault3"></p>
+             </div>
+             <div class = "detalhe-extra">
+                 <p id="Saiu"></p>
+             </div>
+             <div class = "detalhe-extra-default">
+                 <p id="TextoDefault4"></p>
+             </div>
+             <div class = "detalhe-extra">
+                 <p id="Previsão"></p>
+             </div>
+             <div class = "detalhe-extra-default">
+                 <p id="TextoDefault5"></p>
+             </div>
+     </main>
+ 
+     <script>
+         function DetalhesLista() {
+             document.getElementById("PedidoRealizado").innerHTML = "&nbsp  Pedido Realizado";
+             document.getElementById("TextoDefault").innerHTML = "&nbsp&nbsp&nbsp  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+             document.getElementById("PagamentoConfirmado").innerHTML = "&nbsp  Pagamento Confirmado";
+             document.getElementById("Preparo").innerHTML = "&nbsp  Preparo";
+             document.getElementById("Saiu").innerHTML = "&nbsp  Saiu para Entrega";
+             document.getElementById("Previsão").innerHTML = "&nbsp  Previsão de Entrega/Pedido Finalizado";
+             document.getElementById("TextoDefault2").innerHTML = "&nbsp&nbsp&nbsp  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+             document.getElementById("TextoDefault3").innerHTML = "&nbsp&nbsp&nbsp  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+             document.getElementById("TextoDefault4").innerHTML = "&nbsp&nbsp&nbsp  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+             document.getElementById("TextoDefault5").innerHTML = "&nbsp&nbsp&nbsp  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod";
+         }
+     </script>
+</body>
+</html>
